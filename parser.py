@@ -17,14 +17,14 @@ class DataExplore():
         
     def read_data(self):
         """
-        Строка документации метода read_data
+        Читает файл с сохранеными данными и возвращает их
         """
         with open(self.path, 'r') as fp:
             return json.load(fp)
     
     def save_data(self, path=None):
         """
-        Строка документации метода save_data
+        Сохраняет данные параметра self.path
         """
         if path:
             self.path = path
